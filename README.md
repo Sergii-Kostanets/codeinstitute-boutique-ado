@@ -14,10 +14,13 @@ django-admin --version
 django-admin startproject boutique_ado .
 ```
 ```
+python3 manage.py runserver
 ```
 ```
+python3 manage.py migrate
 ```
 ```
+python3 manage.py createsuperuser
 ```
 ```
 ```
