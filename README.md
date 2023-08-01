@@ -1,3 +1,12 @@
+python -m venv venv
+source venv/bin/activate
+deactivate
+
+
+
+
+
+
 ```
 pip3 install 'django<4'
 ```
@@ -23,7 +32,7 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 ```
 ```
-ip3 install django-allauth==0.41.0
+pip3 install django-allauth==0.41.0
 ```
 ```
 python3 manage.py migrate
@@ -32,6 +41,7 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 ```
+pip3 freeze > requirements.txt
 ```
 ```
 ```
