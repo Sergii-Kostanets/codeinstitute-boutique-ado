@@ -44,7 +44,7 @@ python3 manage.py runserver
 pip3 freeze > requirements.txt
 ```
 ```
-
+cp -r /Users/sergeykostanets/Projects/codeinstitute-boutique-ado/venv/lib/python3.11/site-packages/allauth/templates/* ./templates/allauth 
 ```
 ```
 
