@@ -47,10 +47,10 @@ pip3 freeze > requirements.txt
 cp -r /Users/sergeykostanets/Projects/codeinstitute-boutique-ado/venv/lib/python3.11/site-packages/allauth/templates/* ./templates/allauth 
 ```
 ```
-
+python3 manage.py startapp home
 ```
 ```
-
+mkdir -p home/templates/home
 ```
 ```
 
