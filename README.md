@@ -92,7 +92,7 @@ python3 manage.py loaddata categories
 python3 manage.py loaddata products
 ```
 ```
-
+mkdir -p products/templates/products
 ```
 ```
 
