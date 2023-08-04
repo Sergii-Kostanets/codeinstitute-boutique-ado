@@ -53,16 +53,16 @@ python3 manage.py startapp home
 mkdir -p home/templates/home
 ```
 ```
-
+mkdir static
 ```
 ```
-
+mkdir media
 ```
 ```
-
+mkdir static/css
 ```
 ```
-
+mkdir templates/includes
 ```
 ```
 
