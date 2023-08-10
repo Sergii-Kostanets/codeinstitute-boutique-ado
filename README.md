@@ -95,7 +95,7 @@ python3 manage.py loaddata products
 mkdir -p products/templates/products
 ```
 ```
-
+python3 manage.py startapp bag
 ```
 ```
 
