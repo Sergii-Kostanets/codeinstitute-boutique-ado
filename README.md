@@ -98,5 +98,23 @@ mkdir -p products/templates/products
 python3 manage.py startapp bag
 ```
 ```
+python3 manage.py makemigrations --dry-run
+```
+```
+python3 manage.py makemigrations
+```
+```
+python3 manage.py migrate --plan
+```
+```
+python3 manage.py migrate
+```
+```
+python3 manage.py shell
+```
+```
+
+```
+```
 
 ```
