@@ -113,8 +113,18 @@ python3 manage.py migrate
 python3 manage.py shell
 ```
 ```
-
+python3 manage.py startapp checkout
 ```
 ```
-
+python3 manage.py makemigrations --dry-run
+```
+```
+```
+python3 manage.py makemigrations
+```
+```
+python3 manage.py migrate --plan
+```
+```
+python3 manage.py migrate
 ```
