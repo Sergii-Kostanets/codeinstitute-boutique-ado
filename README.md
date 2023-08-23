@@ -128,3 +128,12 @@ python3 manage.py migrate --plan
 ```
 python3 manage.py migrate
 ```
+```
+pip3 install django-crispy-forms==1.14.0
+```
+```
+pip3 freeze > requirements.txt
+```
+```
+
+```
