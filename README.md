@@ -135,5 +135,5 @@ pip3 install django-crispy-forms==1.14.0
 pip3 freeze > requirements.txt
 ```
 ```
-
+pip3 install stripe
 ```
