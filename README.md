@@ -137,3 +137,9 @@ pip3 freeze > requirements.txt
 ```
 pip3 install stripe
 ```
+```
+export STRIPE_PUBLIC_KEY=
+```
+```
+export STRIPE_SECRET_KEY=
+```
