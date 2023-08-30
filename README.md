@@ -143,3 +143,6 @@ export STRIPE_PUBLIC_KEY=
 ```
 export STRIPE_SECRET_KEY=
 ```
+```
+pip3 install django-countries==7.2.1
+```
