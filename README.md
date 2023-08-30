@@ -146,3 +146,6 @@ export STRIPE_SECRET_KEY=
 ```
 pip3 install django-countries==7.2.1
 ```
+```
+python3 manage.py startapp profiles
+```
