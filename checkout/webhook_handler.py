@@ -6,6 +6,8 @@ from products.models import Product
 import json
 import time
 
+import stripe
+
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
@@ -57,7 +59,7 @@ class StripeWH_Handler:
                     town_or_city__iexact=shipping_details.address.city,
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
-                    county__iexact=shipping_details.address.county,
+                    county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_bag=bag,
                     stripe_pid=pid,
@@ -83,7 +85,7 @@ class StripeWH_Handler:
                     town_or_city=shipping_details.address.city,
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
-                    county=shipping_details.address.county,
+                    county=shipping_details.address.state,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
@@ -112,7 +114,7 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
@@ -120,5 +122,5 @@ class StripeWH_Handler:
         Handle the payment_intent.payment_failed webhook from Stripe
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook received: {event["type"]}',
             status=200)
