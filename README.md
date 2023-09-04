@@ -111,13 +111,22 @@ python3 manage.py migrate
 ```
 ```
 python3 manage.py shell
+from products.models import Product
+kdbb = ['kitchen_dining', 'bed_bath']
+clothes = Product.objects.exclude(category__name__in=kdbb)
+clothes.count()
+for item in clothes:
+    item.has_sizes = True
+    item.save()
+Product.objects.filter(has_sizes=True)
+Product.objects.filter(has_sizes=True).count()
+exit()
 ```
 ```
 python3 manage.py startapp checkout
 ```
 ```
 python3 manage.py makemigrations --dry-run
-```
 ```
 ```
 python3 manage.py makemigrations

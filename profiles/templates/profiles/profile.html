@@ -39,7 +39,7 @@
                 <table class="table table-sm table-borderless">
                     <thead>
                         <tr>
-                            <th>Oreder Number</th>
+                            <th>Order Number</th>
                             <th>Date</th>
                             <th>Items</th>
                             <th>Oreder Total</th>
@@ -49,7 +49,7 @@
                         {% for order in orders %}
                         <tr>
                             <td>
-                                <a href="{% url 'order_history' order.order_number}" title="order.order_number">
+                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
                                     {{ order.order_number|truncatechars:6 }}
                                 </a>
                             </td>
@@ -59,7 +59,7 @@
                                     {% for item in order.lineitems.all %}
                                     <li class="small">
                                         {% if item.product.has_sizes %}
-                                        Size {{ itrm.product.size|upper }}
+                                        Size {{ item.product_size|upper }}
                                         {% endif %}
                                         {{ item.product.name }} x{{ item.quantity }}
                                     </li>
