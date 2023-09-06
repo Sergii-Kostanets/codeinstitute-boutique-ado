@@ -158,3 +158,9 @@ pip3 install django-countries==7.2.1
 ```
 python3 manage.py startapp profiles
 ```
+```
+pip3 install dj_database_url==0.5.0 psycopg2
+```
+```
+pip freeze > requirements.txt
+```
