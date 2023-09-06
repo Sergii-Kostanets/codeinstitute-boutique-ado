@@ -189,10 +189,10 @@ heroku login
 heroku config:set DISABLE_COLLECTSTATIC=1 --app boutique-ado-codeinstitute
 ```
 ```
-
+heroku git:remote -a boutique-ado-codeinstitute
 ```
 ```
-
+git push heroku main
 ```
 ```
 
