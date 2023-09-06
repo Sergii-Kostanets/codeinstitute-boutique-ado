@@ -183,10 +183,10 @@ pip3 install 'django<4' gunicorn
 pip3 freeze > requirements.txt
 ```
 ```
-
+heroku login
 ```
 ```
-
+heroku config:set DISABLE_COLLECTSTATIC=1 --app boutique-ado-codeinstitute
 ```
 ```
 
