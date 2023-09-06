@@ -164,3 +164,15 @@ pip3 install dj_database_url==0.5.0 psycopg2
 ```
 pip freeze > requirements.txt
 ```
+```
+python3 manage.py showmigrations
+```
+```
+python3 manage.py migrate
+```
+```
+python3 manage.py loaddata categories
+```
+```
+python3 manage.py loaddata products
+```
