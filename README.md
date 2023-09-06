@@ -162,7 +162,7 @@ python3 manage.py startapp profiles
 pip3 install dj_database_url==0.5.0 psycopg2
 ```
 ```
-pip freeze > requirements.txt
+pip3 freeze > requirements.txt
 ```
 ```
 python3 manage.py showmigrations
@@ -175,4 +175,28 @@ python3 manage.py loaddata categories
 ```
 ```
 python3 manage.py loaddata products
+```
+```
+pip3 install 'django<4' gunicorn
+```
+```
+pip3 freeze > requirements.txt
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
 ```
