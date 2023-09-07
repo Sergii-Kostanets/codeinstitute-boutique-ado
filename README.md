@@ -195,8 +195,11 @@ heroku git:remote -a boutique-ado-codeinstitute
 git push heroku main
 ```
 ```
-
+pip3 install boto3
 ```
 ```
-
+pip3 install django-storages
+```
+```
+pip3 freeze > requirements.txt
 ```
