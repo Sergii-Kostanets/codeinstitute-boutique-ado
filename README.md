@@ -207,10 +207,10 @@ pip3 freeze > requirements.txt
 git add . && git commit -m "commit" && git push
 ```
 ```
-
+pip install flake8
 ```
 ```
-
+pip install flake8-django
 ```
 ```
 
